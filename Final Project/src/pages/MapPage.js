@@ -50,7 +50,7 @@ const MapPage = () => {
         <button onClick={handleSearchLocation}>查詢位置</button>
       </div>
       <div style={{ marginTop: "20px" }}>
-        <LoadScript googleMapsApiKey="google map api">
+        <LoadScript googleMapsApiKey="AIzaSyBtmw2VLVpCHzuM7_eur3F42a9Z-rDKeG4">
           <GoogleMap mapContainerStyle={containerStyle} center={location} zoom={15}>
             {markerPosition && <Marker position={markerPosition} />}
           </GoogleMap>
