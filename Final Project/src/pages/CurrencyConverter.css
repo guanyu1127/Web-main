@@ -1,0 +1,42 @@
+/* CurrencyConverterPage.css */
+.container.currency {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.currency-converter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.currency-converter select,
+.currency-converter input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}

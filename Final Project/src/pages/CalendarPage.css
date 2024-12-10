@@ -1,0 +1,128 @@
+/* 容器樣式 */
+.calendar-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ecf0f1; /* 外部淺色背景 */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50; /* 深灰色文字 */
+    margin-bottom: 20px;
+  }
+  
+  /* 日曆元件樣式 */
+  .react-calendar {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #2c3e50; /* 深色背景 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .react-calendar__tile {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #ecf0f1; /* 白色文字 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .react-calendar__tile:enabled:hover {
+    background-color: #3498db; /* 懸停藍色背景 */
+    color: white;
+  }
+  
+  .react-calendar__tile--active,
+  .selected-date {
+    background-color: #16a085; /* 綠色背景 */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+  }
+  
+  .react-calendar__tile--now {
+    background-color: #e74c3c; /* 紅色背景 */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+  }
+  
+  /* 選擇的日期部分 */
+  .selected-date-section {
+    margin-top: 20px;
+  }
+  
+  .selected-date-display {
+    font-size: 1.2rem;
+    color: #2c3e50; /* 深色文字 */
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* 事件列表部分 */
+  .event-list-section {
+    margin-top: 20px;
+  }
+  
+  .event-list-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+  }
+  
+  .event-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-item {
+    background-color: #ffffff; /* 白色背景 */
+    color: #2c3e50; /* 深灰色文字 */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .no-events {
+    color: #7f8c8d; /* 灰色文字 */
+    font-style: italic;
+  }
+  
+  /* 按鈕樣式 */
+  button {
+    background-color: #1abc9c; /* 綠色背景 */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #16a085;
+  }
+  
+  /* 輸入框樣式 */
+  input[type="text"],
+  input[type="time"] {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #7f8c8d;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  input:focus {
+    border-color: #1abc9c;
+    outline: none;
+  }
+  
